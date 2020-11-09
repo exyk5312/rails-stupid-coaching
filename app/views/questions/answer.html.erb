@@ -1,6 +1,11 @@
 <h1>Answer page</h1>
-<h3>Your question: <%= params[:answer] %></h3>
-
-<h3>coach :<%= @question_answer %> </h3>
+<div class='your question'>
+  <h3 class='your-question'><%= params[:answer] %></h3>
+  <h3>-You</h3>
+</div>
+<div class="your-answer">
+  <h3 class='your-answer'><%= @question_answer %> </h3>
+  <h3 class="your-answer">- your coach</h3>
+</div>
 
 <%= link_to 'ask', ask_path %>
